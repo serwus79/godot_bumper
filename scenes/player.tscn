@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://3v4jw8y0qpmi"]
+
+[ext_resource type="Script" path="res://scenes/Player.cs" id="1_4w651"]
+[ext_resource type="Texture2D" uid="uid://cl1lj0cbx8gp8" path="res://art/player.png" id="2_xpa13"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hf35y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xpa13")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_82q8y"]
+radius = 27.0
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_4w651")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_hf35y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_82q8y")

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cbfoa7u146g8i"]
+
+[node name="PlayingField" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 16.0
+offset_right = 160.0
+offset_bottom = 16.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 320.0
+offset_right = 464.0
+offset_bottom = 16.0
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 16.0
+offset_top = 704.0
+offset_right = 160.0
+offset_bottom = 720.0
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+offset_top = 16.0
+offset_right = 16.0
+offset_bottom = 704.0
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+offset_left = 464.0
+offset_top = 16.0
+offset_right = 480.0
+offset_bottom = 704.0
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 320.0
+offset_top = 704.0
+offset_right = 464.0
+offset_bottom = 720.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(160, 0, 160, 16, 16, 16, 16, 704, 160, 704, 160, 720, 0, 720, 0, 0)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(480, 720)
+rotation = 3.14159
+polygon = PackedVector2Array(160, 0, 160, 16, 16, 16, 16, 704, 160, 704, 160, 720, 0, 720, 0, 0)
